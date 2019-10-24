@@ -1,0 +1,58 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "description": "The sample portal",
+  "keywords": [
+    "piral"
+  ],
+  "dependencies": {
+    "@angular/common": "^8.2.12",
+    "@angular/compiler": "^8.2.12",
+    "@angular/core": "^8.2.12",
+    "@angular/platform-browser": "^8.2.12",
+    "@angular/platform-browser-dynamic": "^8.2.12",
+    "core-js": "^2.5.7",
+    "piral": "^0.8.2",
+    "piral-ng": "^0.8.2",
+    "rxjs": "^6.5.3",
+    "styled-components": "^4.4.0",
+    "zone.js": "^0.10.2"
+  },
+  "scripts": {
+    "start": "piral debug --feed --feed-port 9000 --feed-api-key 123456abcdef",
+    "build": "npm run build:deploy && npm run build:pilets",
+    "build:deploy": "piral build",
+    "build:pilets": "tsc"
+  },
+  "app": "./src/index.html",
+  "main": "lib/index.js",
+  "pilets": {
+    "files": [],
+    "externals": [
+      "styled-components",
+      "@angular/core"
+    ],
+    "scripts": {
+      "build": "npm run build-pilet",
+      "start": "npm run debug-pilet"
+    },
+    "validators": {},
+    "devDependencies": {},
+    "preScaffold": "",
+    "postScaffold": "",
+    "preUpgrade": "",
+    "postUpgrade": ""
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router": "latest",
+    "@types/react-router-dom": "latest",
+    "piral-cli": "latest",
+    "piral-cli-local-feed": "^0.2.0",
+    "sass": "^1.23.1",
+    "typescript": "latest"
+  },
+  "typings": "lib/index.d.ts"
+}
