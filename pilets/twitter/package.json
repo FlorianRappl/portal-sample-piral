@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/react": "16.8.24",
     "portal": "file:../../portal/portal-1.0.0.tgz",
-    "@angular/core": "^8.2.12",
+    "@angular/core": "^11.0.5",
     "styled-components": "^4.4.0",
     "piral-cli": "^0.8.2"
   },
