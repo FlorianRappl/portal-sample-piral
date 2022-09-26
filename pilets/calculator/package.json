@@ -10,7 +10,7 @@
     "portal": "file:../../portal/portal-1.0.0.tgz",
     "@types/react": "16.8.24",
     "styled-components": "^4.4.0",
-    "piral-cli": "^0.8.2"
+    "piral-cli": "^0.14.32"
   },
   "peerDependencies": {
     "styled-components": "*",
